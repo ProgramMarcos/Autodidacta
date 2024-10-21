@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>811</width>
+    <height>801</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Registrar Transacciones</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>0</y>
+     <width>161</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../82392.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>40</y>
+     <width>471</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell Condensed</family>
+     <pointsize>26</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(130, 174, 255);</string>
+   </property>
+   <property name="text">
+    <string>Depósito bancario Internacional</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>190</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tipo de documento *</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbTipo">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>--- Seleccione una opción</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DNI - Documento Identificativo</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PSS - Pasaporte</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>VISA</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>190</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Número de documento *</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtDocumento">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>220</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>560</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Cantidad *</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbMotivo">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>580</y>
+     <width>371</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>--- Seleccione una opción</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Honorarios/Servicios</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Remesas</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Donaciones</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>550</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Motivo Transacción *</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtCantidad">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>590</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>31</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRegistrar">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>710</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 255, 0);
+color: rgb(255, 255, 255);
+border-radius : 8px;</string>
+   </property>
+   <property name="locale">
+    <locale language="Spanish" country="Spain"/>
+   </property>
+   <property name="text">
+    <string>REGISTRAR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>280</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Primer Nombre *</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtPrimerNombre">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtPrimerApellido">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>400</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>370</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Primer apellido *</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtSegundoApellido">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>400</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>370</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Segundo Apellido</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>450</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Sexo *</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbSexo">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>480</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>--- Seleccione una opción</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hombre</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mujer</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>No Especificar</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDateEdit" name="txtFecha">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>480</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="minimumDateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>1900</year>
+     <month>1</month>
+     <day>5</day>
+    </datetime>
+   </property>
+   <property name="minimumDate">
+    <date>
+     <year>1900</year>
+     <month>1</month>
+     <day>5</day>
+    </date>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::LocalTime</enum>
+   </property>
+   <property name="date">
+    <date>
+     <year>2020</year>
+     <month>10</month>
+     <day>10</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>450</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Fecha de Nacimiento *</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>450</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Lugar de Nacimiento *</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbLugar">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>480</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>--- Seleccione una opción</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QCheckBox" name="checkTerminos">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>730</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Aceptar términos y condiciones *</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>150</y>
+     <width>811</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(235, 238, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>301</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 85, 127);</string>
+    </property>
+    <property name="text">
+     <string>Los campos con (*) son obligatorios</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>280</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Segundo Nombre</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtSegundoNombre">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>310</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkDolares">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>640</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Dolares </string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkInternacional">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>660</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Internacional </string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
